@@ -1,0 +1,94 @@
+/* PawQuest — color tokens. Base palette first, then semantic aliases.
+   Contrast ratios noted are against the paired fg/bg (WCAG 2.2). */
+:root{
+  /* Brand */
+  --pq-coral:#E9967A;      /* Muted Coral */
+  --pq-ivory:#FFFDF7;      /* Warm Ivory */
+  --pq-olive:#7C8C65;      /* Olive Green */
+  --pq-charcoal:#333333;   /* Deep Charcoal */
+  --pq-brown:#4B2717;      /* Logo ink (wordmark + outline) */
+
+  /* Coral ramp */
+  --coral-50:#FDF1EC;--coral-100:#FAE0D6;--coral-200:#F4C3B1;--coral-300:#EEAC95;
+  --coral-400:#E9967A;--coral-500:#E68B6E;--coral-600:#E28366;--coral-700:#A84A30;--coral-800:#7E3622;
+
+  /* Olive ramp */
+  --olive-50:#F3F5EF;--olive-100:#E4E9DB;--olive-200:#C9D2BA;--olive-300:#A6B38F;
+  --olive-400:#7C8C65;--olive-500:#6A7A55;--olive-600:#5C6B48;--olive-700:#4D5A3C;--olive-800:#3A4430;
+
+  /* Warm neutrals */
+  --neutral-0:#FFFFFF;--neutral-25:#FFFDF7;--neutral-50:#FBF6EC;--neutral-100:#F5EEE1;
+  --neutral-200:#EFE9DF;--neutral-300:#E8DFD2;--neutral-400:#D9CFC0;--neutral-500:#9A938A;
+  --neutral-600:#8C857B;--neutral-700:#6B6560;--neutral-800:#5C5C5C;--neutral-900:#333333;--neutral-950:#262626;
+
+  /* Feedback */
+  --red-600:#B23A2B;--red-50:#FBEAE7;--green-700:#4D5A3C;--green-50:#F3F5EF;
+
+  /* ---------- Semantic ---------- */
+  --color-primary:var(--coral-400);
+  --color-primary-strong:var(--coral-700);   /* coral for text/icons: 5.0:1 on ivory */
+  --color-primary-soft:var(--coral-50);
+  --color-secondary:var(--olive-400);
+  --color-secondary-strong:var(--olive-600); /* olive for fills behind text */
+  --color-secondary-soft:var(--olive-50);
+
+  /* Backgrounds & surfaces */
+  --bg-page:var(--pq-ivory);
+  --bg-subtle:var(--neutral-50);
+  --bg-muted:var(--neutral-100);
+  --bg-coral:var(--coral-50);
+  --bg-olive:var(--olive-50);
+  --bg-inverse:var(--pq-charcoal);
+  --surface-card:var(--neutral-0);
+  --surface-raised:var(--neutral-0);
+  --surface-overlay:rgba(51,51,51,.48);
+
+  /* Text */
+  --text-primary:var(--pq-charcoal);   /* 12.4:1 on ivory */
+  --text-secondary:var(--neutral-800); /* 6.6:1 on ivory */
+  --text-muted:var(--neutral-700);     /* 5.6:1 on ivory, 5.0:1 on neutral-100 */
+  --text-inverse:var(--pq-ivory);
+  --text-brand:var(--pq-brown);
+  --text-link:var(--coral-700);
+  --text-link-hover:var(--coral-800);
+  --text-on-primary:var(--pq-charcoal);  /* 5.5:1 on coral-400 */
+  --text-on-secondary:var(--pq-ivory);   /* 5.7:1 on olive-600 */
+  --text-disabled:var(--neutral-500);
+
+  /* Borders & dividers */
+  --border-subtle:var(--neutral-300);   /* decorative dividers */
+  --border-default:var(--neutral-400);  /* card outlines */
+  --border-strong:var(--neutral-600);   /* form controls — 3.6:1 (non-text 3:1) */
+  --border-focus:var(--pq-charcoal);
+
+  /* Buttons — primary (coral) */
+  --btn-primary-bg:var(--coral-400);
+  --btn-primary-bg-hover:var(--coral-500);  /* text 5.0:1 */
+  --btn-primary-bg-active:var(--coral-600); /* text 4.6:1 */
+  --btn-primary-fg:var(--text-on-primary);
+  /* Buttons — secondary (olive) */
+  --btn-secondary-bg:var(--olive-600);
+  --btn-secondary-bg-hover:var(--olive-700);
+  --btn-secondary-bg-active:var(--olive-800);
+  --btn-secondary-fg:var(--text-on-secondary);
+  /* Buttons — outline */
+  --btn-outline-border:var(--pq-charcoal);
+  --btn-outline-fg:var(--pq-charcoal);
+  --btn-outline-bg-hover:var(--neutral-100);
+  --btn-outline-bg-active:var(--neutral-300);
+  /* Disabled (all variants) */
+  --btn-disabled-bg:var(--neutral-200);
+  --btn-disabled-fg:var(--neutral-500);
+  --btn-disabled-border:var(--neutral-300);
+
+  /* Interactive states */
+  --state-hover-overlay:rgba(51,51,51,.06);
+  --state-active-overlay:rgba(51,51,51,.12);
+  --focus-ring-inner:var(--pq-ivory);
+  --focus-ring-outer:var(--pq-charcoal);
+  --focus-ring:0 0 0 3px var(--focus-ring-inner),0 0 0 6px var(--focus-ring-outer);
+
+  /* Feedback */
+  --color-error:var(--red-600);--bg-error:var(--red-50);
+  --color-success:var(--green-700);--bg-success:var(--green-50);
+}

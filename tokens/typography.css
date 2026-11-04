@@ -1,0 +1,49 @@
+/* PawQuest — typography tokens. Desktop values on :root; mobile overrides ≤768px. */
+:root{
+  --font-display:'DM Serif Display',Georgia,'Times New Roman',serif;
+  --font-body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  --weight-regular:400;/* @kind other */--weight-medium:500;/* @kind other */--weight-semibold:600;/* @kind other */--weight-bold:700;/* @kind other */
+
+  /* H1 */
+  --h1-size:64px;--h1-line:1.08;/* @kind other */--h1-tracking:-0.015em;/* @kind other */--h1-weight:400;/* @kind other */
+  /* H2 */
+  --h2-size:44px;--h2-line:1.15;/* @kind other */--h2-tracking:-0.01em;/* @kind other */--h2-weight:400;/* @kind other */
+  /* H3 */
+  --h3-size:28px;--h3-line:1.25;/* @kind other */--h3-tracking:0;/* @kind other */--h3-weight:400;/* @kind other */
+  /* Lead (intro paragraph) */
+  --lead-size:20px;--lead-line:1.55;/* @kind other */
+  /* Body */
+  --body-size:18px;--body-line:1.6;/* @kind other */--body-weight:400;/* @kind other */
+  /* Small */
+  --small-size:14px;--small-line:1.5;/* @kind other */
+  /* Eyebrow / overline */
+  --eyebrow-size:13px;--eyebrow-line:1.3;/* @kind other */--eyebrow-tracking:0.1em;/* @kind other */--eyebrow-weight:600;/* @kind other */
+  /* Navigation (DM Sans Medium) */
+  --nav-size:16px;--nav-line:1.2;/* @kind other */--nav-weight:500;/* @kind other */
+  /* Button labels (DM Sans SemiBold) */
+  --button-size:16px;--button-size-sm:14px;--button-size-lg:18px;--button-line:1.2;/* @kind other */--button-weight:600;/* @kind other */--button-tracking:0.01em;/* @kind other */
+
+  /* Shorthands */
+  --type-h1:var(--h1-weight) var(--h1-size)/var(--h1-line) var(--font-display);
+  --type-h2:var(--h2-weight) var(--h2-size)/var(--h2-line) var(--font-display);
+  --type-h3:var(--h3-weight) var(--h3-size)/var(--h3-line) var(--font-display);
+  --type-lead:400 var(--lead-size)/var(--lead-line) var(--font-body);
+  --type-body:400 var(--body-size)/var(--body-line) var(--font-body);
+  --type-small:400 var(--small-size)/var(--small-line) var(--font-body);
+  --type-nav:500 var(--nav-size)/var(--nav-line) var(--font-body);
+  --type-button:600 var(--button-size)/var(--button-line) var(--font-body);
+
+  --measure:64ch;/* @kind other */ /* max line length for body copy */
+}
+@media (max-width:768px){
+  :root{
+    --h1-size:40px;--h1-line:1.12;/* @kind other */
+    --h2-size:32px;--h2-line:1.18;/* @kind other */
+    --h3-size:24px;--h3-line:1.3;/* @kind other */
+    --lead-size:18px;
+    --body-size:16px;--body-line:1.6;/* @kind other */
+    --small-size:14px;
+    --nav-size:18px; /* larger tap labels in mobile drawer */
+  }
+}

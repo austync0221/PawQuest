@@ -1,0 +1,80 @@
+/* PawQuest — spacing, layout, radius, elevation, motion. */
+:root{
+  /* Base scale (4px step) */
+  --space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;
+  --space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;
+
+  /* Sections */
+  --section-y:var(--space-24);       /* vertical padding of page sections */
+  --section-y-sm:var(--space-16);
+  --container-max:1200px;
+  --container-x:var(--space-8);      /* page gutter */
+
+  /* Component padding */
+  --pad-card:var(--space-6);
+  --pad-container:var(--space-12);
+  --pad-btn-y:14px;--pad-btn-x:28px;
+  --pad-btn-sm-y:10px;--pad-btn-sm-x:20px;
+  --pad-btn-lg-y:18px;--pad-btn-lg-x:36px;
+  --pad-input-y:14px;--pad-input-x:18px;
+  --pad-badge-y:4px;--pad-badge-x:12px;
+
+  /* Margins / stacks */
+  --stack-xs:var(--space-2);
+  --stack-sm:var(--space-4);
+  --stack-md:var(--space-6);
+  --stack-lg:var(--space-10);
+  --stack-xl:var(--space-16);
+
+  /* Grid gaps */
+  --gap-grid:var(--space-8);
+  --gap-grid-sm:var(--space-5);
+  --gap-inline:var(--space-3);
+
+  /* Text spacing */
+  --text-eyebrow-gap:var(--space-3); /* eyebrow → heading */
+  --text-heading-gap:var(--space-4); /* heading → body */
+  --text-paragraph-gap:var(--space-5);
+
+  /* Hit targets */
+  --target-min:44px;
+  --nav-height:84px;
+
+  /* ---------- Radius ---------- */
+  --radius-xs:6px;--radius-sm:10px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--radius-2xl:40px;--radius-pill:999px;
+  --radius-button:var(--radius-pill);
+  --radius-card:var(--radius-xl);      /* pet profile cards */
+  --radius-image:var(--radius-lg);     /* standalone imagery */
+  --radius-card-image:var(--radius-lg);/* photo inset within a card */
+  --radius-container:var(--radius-2xl);/* feature panels, CTA bands */
+  --radius-input:var(--radius-md);
+  --radius-badge:var(--radius-pill);
+  --radius-chip:var(--radius-pill);
+  --radius-menu:var(--radius-lg);      /* mobile drawer, dropdowns */
+
+  /* ---------- Elevation (warm-tinted, from logo brown) ---------- */
+  --shadow-xs:0 1px 2px rgba(75,39,23,.06);
+  --shadow-sm:0 1px 2px rgba(75,39,23,.05),0 4px 12px rgba(75,39,23,.06);
+  --shadow-md:0 2px 4px rgba(75,39,23,.04),0 12px 28px rgba(75,39,23,.09);
+  --shadow-lg:0 4px 8px rgba(75,39,23,.04),0 24px 48px -12px rgba(75,39,23,.18);
+  --shadow-inset-press:inset 0 2px 4px rgba(51,51,51,.14);
+
+  /* ---------- Motion ---------- */
+  --ease-out:cubic-bezier(.22,.8,.3,1);/* @kind other */
+  --ease-spring:cubic-bezier(.34,1.4,.64,1);/* @kind other */
+  --dur-fast:120ms;/* @kind other */--dur-base:200ms;/* @kind other */--dur-slow:320ms;/* @kind other */
+}
+@media (max-width:768px){
+  :root{
+    --section-y:var(--space-16);
+    --section-y-sm:var(--space-12);
+    --container-x:var(--space-5);
+    --pad-container:var(--space-8);
+    --gap-grid:var(--space-5);
+    --nav-height:68px;
+    --radius-container:var(--radius-xl);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  :root{--dur-fast:0ms;/* @kind other */--dur-base:0ms;/* @kind other */--dur-slow:0ms;/* @kind other */}
+}

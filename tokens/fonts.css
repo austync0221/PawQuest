@@ -1,0 +1,6 @@
+/* PawQuest webfonts — DM Sans (400–700 variable) + DM Serif Display 400. Latin subset, self-hosted from Google Fonts (OFL). */
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/DMSans-latin-var.woff2') format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/DMSans-latin-var.woff2') format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/DMSans-latin-var.woff2') format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/fonts/DMSans-latin-var.woff2') format('woff2')}
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/DMSerifDisplay-latin-400.woff2') format('woff2')}
